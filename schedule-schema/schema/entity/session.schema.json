@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/FurryApp/event-schedule-schema/schema/entity/session.schema.json",
+  "title": "Session",
+  "type": "object",
+  "required": ["id", "displayName", "timeSlots"],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z]{2}(-[A-Z]{2})?$": {
+          "type": "string"
+        }
+      }
+    },
+    "description": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z]{2}(-[A-Z]{2})?$": {
+          "type": "string"
+        }
+      }
+    },
+    "typeId": {
+      "type": "string"
+    },
+    "trackId": {
+      "type": "string"
+    },
+    "labelIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowedMembershipLevelIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "minAge": {
+      "type": "integer"
+    },
+    "ticketed": {
+      "type": "boolean"
+    },
+    "externalLinks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "displayName": {
+            "type": "object",
+            "patternProperties": {
+              "^[a-z]{2}(-[A-Z]{2})?$": {
+                "type": "string"
+              }
+            }
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["displayName", "url"]
+      }
+    },
+    "imageThumbnailUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional link to a thumbnail image."
+    },
+    "imageBannerUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional link to a larger banner image."
+    },
+    "timeSlots": {
+      "type": "array",
+      "description": "All time/location slots for the session",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["startTime", "endTime"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "startTime": { "type": "string", "format": "date-time" },
+          "endTime": { "type": "string", "format": "date-time" },
+          "roomIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "hostIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "x-meta": {
+            "$ref": "../partials/x-meta.schema.json"
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "vendorId": {
+          "type": "string"
+        },
+        "appVersion": {
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "x-meta": {
+      "$ref": "../partials/x-meta.schema.json"
+    }
+  },
+  "additionalProperties": false
+}

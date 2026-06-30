@@ -1,0 +1,39 @@
+{
+  "scheduleDataEndpoint": "/mock-data/full-convention-2026.json",
+  "timezone": "Europe/Vienna",
+  "preferredLocale": "en-US",
+  "refreshSeconds": 20,
+  "fetchTimeoutMs": 8000,
+  "staleWarningSeconds": 120,
+  "staleErrorSeconds": 600,
+  "hardReloadMinutes": 180,
+  "defaultWindowMinutes": 240,
+  "showLogo": true,
+  "showVenueInRoomHeader": true,
+  "startingSoonMinutes": 15,
+  "endedGraceMinutes": 2,
+  "theme": {
+    "pageBackgroundColor": "transparent",
+    "surfaceColor": "rgba(24, 24, 27, 0.88)",
+    "surfaceStrongColor": "rgba(39, 39, 42, 0.96)",
+    "borderColor": "rgba(255, 255, 255, 0.12)",
+    "textColor": "#ffffff",
+    "textMutedColor": "#c8cad7",
+    "primaryColor": "#e44763",
+    "primaryStrongColor": "#cd4059",
+    "warningColor": "#f59e0b",
+    "dangerColor": "#ef4444",
+    "successColor": "#22c55e",
+    "shadowColor": "rgba(0, 0, 0, 0.42)",
+    "fontFamilyBody": "\"Inter var\", Inter, system-ui, sans-serif",
+    "fontFamilyAccent": "\"Caveat\", cursive"
+  },
+  "layout": {
+    "regionWidthVw": 34,
+    "regionMinWidthPx": 340,
+    "regionMaxWidthPx": 760,
+    "outerPaddingPx": 24,
+    "cardGapPx": 18,
+    "align": "left"
+  }
+}

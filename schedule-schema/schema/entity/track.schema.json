@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/FurryApp/event-schedule-schema/schema/entity/track.schema.json",
+  "title": "Track",
+  "type": "object",
+  "required": ["id", "displayName"],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z]{2}(-[A-Z]{2})?$": {
+          "type": "string"
+        }
+      }
+    },
+    "description": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z]{2}(-[A-Z]{2})?$": {
+          "type": "string"
+        }
+      }
+    },
+    "x-meta": {
+      "$ref": "../partials/x-meta.schema.json"
+    }
+  },
+  "additionalProperties": false
+}

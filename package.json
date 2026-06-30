@@ -1,0 +1,24 @@
+{
+  "name": "awoostria-schedule-renderer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "generate:mock:full": "node scripts/generate-full-convention-mock.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "luxon": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "typescript": "^5.6.3",
+    "vite": "^7.0.0",
+    "vitest": "^2.1.4"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-06-18T14:32:00+02:00",
+  "source": {
+    "name": "Awoostria Mock Schedule",
+    "vendorId": "mock",
+    "appVersion": "1.0.0",
+    "lastModifiedAt": "2026-06-18T14:31:30+02:00"
+  },
+  "event": {
+    "id": "awoostria-2026",
+    "displayName": {
+      "en-US": "Awoostria 2026"
+    },
+    "startTime": "2026-06-18T08:00:00+02:00",
+    "endTime": "2026-06-20T23:00:00+02:00",
+    "timezone": "Europe/Vienna"
+  },
+  "membershipLevels": [],
+  "tracks": [],
+  "sessionTypes": [],
+  "labels": [],
+  "venues": [
+    {
+      "id": "hyatt",
+      "displayName": {
+        "en-US": "Hyatt Regency Vienna"
+      }
+    }
+  ],
+  "rooms": [
+    {
+      "id": "panel-1",
+      "displayName": {
+        "en-US": "Panel Room 1"
+      },
+      "venueId": "hyatt"
+    },
+    {
+      "id": "main-stage",
+      "displayName": {
+        "en-US": "Main Stage"
+      },
+      "venueId": "hyatt"
+    }
+  ],
+  "hosts": [],
+  "sessions": [
+    {
+      "id": "delayed-session",
+      "displayName": {
+        "en-US": "Costume Repair Q&A"
+      },
+      "timeSlots": [
+        {
+          "id": "delayed-slot",
+          "startTime": "2026-06-18T14:20:00+02:00",
+          "endTime": "2026-06-18T15:05:00+02:00",
+          "roomIds": ["panel-1"],
+          "x-meta": {
+            "timeslotStatus": "DELAYED"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cancelled-session",
+      "displayName": {
+        "en-US": "Late Night Karaoke"
+      },
+      "timeSlots": [
+        {
+          "id": "cancelled-slot",
+          "startTime": "2026-06-18T15:30:00+02:00",
+          "endTime": "2026-06-18T16:15:00+02:00",
+          "roomIds": ["panel-1"],
+          "x-meta": {
+            "timeslotStatus": "CANCELLED"
+          }
+        }
+      ]
+    },
+    {
+      "id": "moved-session",
+      "displayName": {
+        "en-US": "Meet the DJs"
+      },
+      "timeSlots": [
+        {
+          "id": "moved-slot",
+          "startTime": "2026-06-18T14:40:00+02:00",
+          "endTime": "2026-06-18T15:20:00+02:00",
+          "roomIds": ["main-stage"],
+          "x-meta": {
+            "timeslotStatus": "MOVED"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/FurryApp/event-schedule-schema/schema/furry-event-schedule-schema.json",
+  "title": "Furry Event Schedule Schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "vendorId": { "type": "string" },
+        "appVersion": { "type": "string" },
+        "lastModifiedBy": { "type": "string" },
+        "lastModifiedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    },
+    "x-meta": {
+      "$ref": "partials/x-meta.schema.json"
+    },
+    "event": {
+      "$ref": "event.schema.json"
+    },
+    "membershipLevels": {
+      "$ref": "membershipLevels.schema.json"
+    },
+    "tracks": {
+      "$ref": "tracks.schema.json"
+    },
+    "sessionTypes": {
+      "$ref": "sessionTypes.schema.json"
+    },
+    "labels": {
+      "$ref": "labels.schema.json"
+    },
+    "venues": {
+      "$ref": "venues.schema.json"
+    },
+    "rooms": {
+      "$ref": "rooms.schema.json"
+    },
+    "hosts": {
+      "$ref": "hosts.schema.json"
+    },
+    "sessions": {
+      "$ref": "sessions.schema.json"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "updatedAt",
+    "event",
+    "membershipLevels",
+    "tracks",
+    "sessionTypes",
+    "labels",
+    "venues",
+    "hosts",
+    "sessions"
+  ],
+  "additionalProperties": false
+}

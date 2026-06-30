@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "3030-07-01T12:00:00Z",
+  "event": {
+    "id": "minimal-example",
+    "displayName": {
+      "en-US": "Minimal Example Convention"
+    },
+    "startTime": "3030-08-01T00:00:00Z",
+    "endTime": "3030-08-03T23:59:59Z",
+    "timezone": "America/New_York"
+  },
+  "membershipLevels": [],
+  "tracks": [],
+  "sessionTypes": [],
+  "labels": [],
+  "venues": [
+    {
+      "id": "conventionCenter",
+      "displayName": {
+        "en-US": "Furtown Convention Center"
+      }
+    }
+  ],
+  "rooms": [
+    {
+      "id": "mainHall",
+      "displayName": {
+        "en-US": "Main Hall"
+      },
+      "venueId": "conventionCenter"
+    },
+    {
+      "id": "artRoomA",
+      "displayName": {
+        "en-US": "Art Room A"
+      },
+      "venueId": "conventionCenter"
+    },
+    {
+      "id": "artRoomB",
+      "displayName": {
+        "en-US": "Art Room B"
+      },
+      "venueId": "conventionCenter"
+    }
+  ],
+  "hosts": [
+    {
+      "id": "p-001",
+      "displayName": "Alofoxx"
+    },
+    {
+      "id": "p-002",
+      "displayName": "Alofoxx’s Guest"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "s-100",
+      "displayName": {
+        "en-US": "Wolf Roundtable"
+      },
+      "description": {
+        "en-US": "A casual meetup for wolves and wolf enthusiasts."
+      },
+      "timeSlots": [
+        {
+          "startTime": "3030-08-01T10:00:00-04:00",
+          "endTime": "3030-08-01T11:00:00-04:00",
+          "roomIds": ["mainHall"],
+          "hostIds": ["p-002"]
+        }
+      ]
+    },
+    {
+      "id": "s-101",
+      "displayName": {
+        "en-US": "Painting Techniques"
+      },
+      "description": {
+        "en-US": "Workshop on painting anthropomorphic characters."
+      },
+      "timeSlots": [
+        {
+          "startTime": "3030-08-01T14:00:00-04:00",
+          "endTime": "3030-08-01T16:00:00-04:00",
+          "roomIds": ["artRoomA", "artRoomB"],
+          "hostIds": ["p-001"]
+        }
+      ]
+    },
+    {
+      "id": "s-102",
+      "displayName": {
+        "en-US": "Night Howl Social (18+)"
+      },
+      "timeSlots": [
+        {
+          "startTime": "3030-08-01T23:00:00-04:00",
+          "endTime": "3030-08-02T01:00:00-04:00"
+        }
+      ]
+    }
+  ]
+}

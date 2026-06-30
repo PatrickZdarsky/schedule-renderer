@@ -1,0 +1,2212 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-07-21T20:00:00+02:00",
+  "source": {
+    "name": "Awoostria full convention mock generator",
+    "vendorId": "mock-generator",
+    "appVersion": "1.0.0",
+    "lastModifiedBy": "Codex",
+    "lastModifiedAt": "2026-07-21T20:00:00+02:00"
+  },
+  "event": {
+    "id": "awoostria-2026-full-mock",
+    "displayName": {
+      "en-US": "Awoostria 2026"
+    },
+    "formattedAddress": "Hyatt Regency Vienna & Cape 10, Vienna, Austria",
+    "startTime": "2026-07-22T09:00:00+02:00",
+    "endTime": "2026-07-25T23:30:00+02:00",
+    "timezone": "Europe/Vienna",
+    "description": {
+      "en-US": "Generated mock schedule using the current 2026 panel submissions, roughly spread across Main Stage, Artist, and HealthLab."
+    }
+  },
+  "membershipLevels": [],
+  "tracks": [
+    {
+      "id": "stage",
+      "displayName": {
+        "en-US": "Stage & Spotlight"
+      }
+    },
+    {
+      "id": "creative",
+      "displayName": {
+        "en-US": "Creative & Maker"
+      }
+    },
+    {
+      "id": "community",
+      "displayName": {
+        "en-US": "Community & Wellbeing"
+      }
+    }
+  ],
+  "sessionTypes": [
+    {
+      "id": "panel",
+      "displayName": {
+        "en-US": "Panel"
+      }
+    },
+    {
+      "id": "meetup",
+      "displayName": {
+        "en-US": "Meetup"
+      }
+    },
+    {
+      "id": "workshop",
+      "displayName": {
+        "en-US": "Workshop"
+      }
+    },
+    {
+      "id": "show",
+      "displayName": {
+        "en-US": "Show"
+      }
+    },
+    {
+      "id": "social",
+      "displayName": {
+        "en-US": "Social"
+      }
+    },
+    {
+      "id": "ceremony",
+      "displayName": {
+        "en-US": "Ceremony"
+      }
+    }
+  ],
+  "labels": [
+    {
+      "id": "anxiety-warning",
+      "displayName": {
+        "en-US": "Anxiety Warning"
+      }
+    },
+    {
+      "id": "chill",
+      "displayName": {
+        "en-US": "Chill"
+      }
+    },
+    {
+      "id": "core-event",
+      "displayName": {
+        "en-US": "Core Event"
+      }
+    },
+    {
+      "id": "creative-exchange",
+      "displayName": {
+        "en-US": "Creative Exchange"
+      }
+    },
+    {
+      "id": "fursuiter-friendly",
+      "displayName": {
+        "en-US": "Fursuiter-Friendly"
+      }
+    },
+    {
+      "id": "late-night-panel",
+      "displayName": {
+        "en-US": "Late-Night Panel"
+      }
+    },
+    {
+      "id": "lights-warning",
+      "displayName": {
+        "en-US": "Lights Warning"
+      }
+    },
+    {
+      "id": "noise-warning",
+      "displayName": {
+        "en-US": "Noise Warning"
+      }
+    },
+    {
+      "id": "nsfw",
+      "displayName": {
+        "en-US": "NSFW"
+      }
+    },
+    {
+      "id": "passive",
+      "displayName": {
+        "en-US": "Passive"
+      }
+    },
+    {
+      "id": "relaxed-dress-code",
+      "displayName": {
+        "en-US": "Relaxed Dress Code"
+      }
+    },
+    {
+      "id": "series",
+      "displayName": {
+        "en-US": "Series"
+      }
+    }
+  ],
+  "venues": [
+    {
+      "id": "awoostria-campus",
+      "displayName": {
+        "en-US": "Hyatt Regency Vienna"
+      },
+      "formattedAddress": "Hyatt Regency Vienna & Cape 10, Vienna, Austria"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "main-stage",
+      "displayName": {
+        "en-US": "Main Stage"
+      },
+      "venueId": "awoostria-campus"
+    },
+    {
+      "id": "artist",
+      "displayName": {
+        "en-US": "Artist"
+      },
+      "venueId": "awoostria-campus"
+    },
+    {
+      "id": "healthlab",
+      "displayName": {
+        "en-US": "HealthLab"
+      },
+      "venueId": "awoostria-campus"
+    }
+  ],
+  "hosts": [
+    {
+      "id": "sinsec",
+      "displayName": "Sinsec"
+    },
+    {
+      "id": "zenprotogen",
+      "displayName": "ZenProtogen"
+    },
+    {
+      "id": "volteer-the-story-department",
+      "displayName": "Volteer & The Story Department"
+    },
+    {
+      "id": "moss",
+      "displayName": "Moss"
+    },
+    {
+      "id": "teal",
+      "displayName": "Teal"
+    },
+    {
+      "id": "russel",
+      "displayName": "Russel"
+    },
+    {
+      "id": "silico",
+      "displayName": "Silico"
+    },
+    {
+      "id": "linux",
+      "displayName": "Linux"
+    },
+    {
+      "id": "yuki-claw",
+      "displayName": "Yuki Claw"
+    },
+    {
+      "id": "tea",
+      "displayName": "Tea++"
+    },
+    {
+      "id": "luck",
+      "displayName": "Luck"
+    },
+    {
+      "id": "chipflake",
+      "displayName": "Chipflake"
+    },
+    {
+      "id": "nahalo",
+      "displayName": "Nahalo"
+    },
+    {
+      "id": "oskar",
+      "displayName": "Oskar"
+    },
+    {
+      "id": "verulon",
+      "displayName": "Verulon"
+    },
+    {
+      "id": "oolas",
+      "displayName": "Oolas"
+    },
+    {
+      "id": "kinsou-just-me",
+      "displayName": "Kinsou (just me)"
+    },
+    {
+      "id": "k-los",
+      "displayName": "K'los"
+    },
+    {
+      "id": "frost-voidfox",
+      "displayName": "Frost VoidFOx"
+    },
+    {
+      "id": "adam",
+      "displayName": "Adam"
+    },
+    {
+      "id": "fenmar",
+      "displayName": "Fenmar"
+    },
+    {
+      "id": "jetfox",
+      "displayName": "Jetfox"
+    },
+    {
+      "id": "werewilse",
+      "displayName": "WereWilse"
+    },
+    {
+      "id": "keeba",
+      "displayName": "Keeba"
+    },
+    {
+      "id": "disability",
+      "displayName": "Disability"
+    },
+    {
+      "id": "lilnoodles",
+      "displayName": "LilNoodles"
+    },
+    {
+      "id": "silvary",
+      "displayName": "Silvary"
+    },
+    {
+      "id": "notefox",
+      "displayName": "NoteFox"
+    },
+    {
+      "id": "firedawg",
+      "displayName": "FireDawg"
+    },
+    {
+      "id": "operator-burstup",
+      "displayName": "Operator Burstup"
+    },
+    {
+      "id": "hai",
+      "displayName": "Hai"
+    },
+    {
+      "id": "furcphoto",
+      "displayName": "FurCPhoto"
+    },
+    {
+      "id": "tea",
+      "displayName": "Tea"
+    },
+    {
+      "id": "apollo",
+      "displayName": "Apollo"
+    },
+    {
+      "id": "aury",
+      "displayName": "Aury"
+    },
+    {
+      "id": "luna-stellar",
+      "displayName": "Luna Stellar"
+    },
+    {
+      "id": "batty",
+      "displayName": "Batty"
+    },
+    {
+      "id": "nachtkind",
+      "displayName": "Nachtkind"
+    },
+    {
+      "id": "tib-averus",
+      "displayName": "Tib Averus"
+    },
+    {
+      "id": "ronin-saires",
+      "displayName": "Ronin Saires"
+    },
+    {
+      "id": "gratiskralle",
+      "displayName": "Gratiskralle"
+    },
+    {
+      "id": "covahr",
+      "displayName": "CoVahr"
+    },
+    {
+      "id": "hi-m-ben",
+      "displayName": "Hi'm Ben"
+    },
+    {
+      "id": "uvok",
+      "displayName": "uvok"
+    },
+    {
+      "id": "shimmer-light",
+      "displayName": "Shimmer_Light"
+    },
+    {
+      "id": "seishin",
+      "displayName": "Seishin"
+    },
+    {
+      "id": "kruemel",
+      "displayName": "Kruemel"
+    },
+    {
+      "id": "griffin-bandida",
+      "displayName": "Griffin Bandida"
+    },
+    {
+      "id": "lungdrache",
+      "displayName": "Lungdrache"
+    },
+    {
+      "id": "lumi-snow-leopard",
+      "displayName": "Lumi Snow Leopard"
+    },
+    {
+      "id": "kura",
+      "displayName": "Kura"
+    },
+    {
+      "id": "aj",
+      "displayName": "AJ"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "3dgpma",
+      "displayName": {
+        "en-US": "Mahjong meet and play"
+      },
+      "description": {
+        "en-US": "Come and learn how to play or play with others."
+      },
+      "timeSlots": [
+        {
+          "id": "3dgpma-slot",
+          "startTime": "2026-07-25T12:00:00+02:00",
+          "endTime": "2026-07-25T13:30:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "sinsec"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "creative",
+      "labelIds": [
+        "passive"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "3drqhh",
+      "displayName": {
+        "en-US": "Long distance relationships: and how to handle them"
+      },
+      "description": {
+        "en-US": "Join the panel if you want to learn and discuss about how to manage long distance relationships."
+      },
+      "timeSlots": [
+        {
+          "id": "3drqhh-slot",
+          "startTime": "2026-07-23T14:00:00+02:00",
+          "endTime": "2026-07-23T14:45:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "zenprotogen"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [
+        "anxiety-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "3qqvgc",
+      "displayName": {
+        "en-US": "Crafting Rain's Journey: Behind the Scenes of the Awoostria Story"
+      },
+      "description": {
+        "en-US": "Join the crew of the Awoostria Story department as they reveal the process behind game and animation"
+      },
+      "timeSlots": [
+        {
+          "id": "3qqvgc-slot",
+          "startTime": "2026-07-24T17:00:00+02:00",
+          "endTime": "2026-07-24T18:30:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "volteer-the-story-department"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "7tyd3u",
+      "displayName": {
+        "en-US": "Introduction to Shibari"
+      },
+      "description": {
+        "en-US": "Learn about Japanese-inspired rope bondage: history, tools, techniques, and safety."
+      },
+      "timeSlots": [
+        {
+          "id": "7tyd3u-slot",
+          "startTime": "2026-07-23T16:00:00+02:00",
+          "endTime": "2026-07-23T17:30:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "moss"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [
+        "nsfw"
+      ],
+      "minAge": 18,
+      "ticketed": false
+    },
+    {
+      "id": "7zkhyn",
+      "displayName": {
+        "en-US": "From Awesome to even more Awesome: Advanced Social Skills for People Who've Already Cracked the Shell"
+      },
+      "description": {
+        "en-US": "Already social? Level up! Master quick-wit, group dynamics & authentic connection. Not for beginners."
+      },
+      "timeSlots": [
+        {
+          "id": "7zkhyn-slot",
+          "startTime": "2026-07-24T16:00:00+02:00",
+          "endTime": "2026-07-24T17:30:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "teal"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "community",
+      "labelIds": [
+        "series",
+        "noise-warning",
+        "lights-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "87w8cw",
+      "displayName": {
+        "en-US": "Mustelid Meetup"
+      },
+      "description": {
+        "en-US": "Meet fellow Mustelids!"
+      },
+      "timeSlots": [
+        {
+          "id": "87w8cw-slot",
+          "startTime": "2026-07-25T13:00:00+02:00",
+          "endTime": "2026-07-25T14:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "russel"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "community",
+      "labelIds": [
+        "passive",
+        "fursuiter-friendly"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "8ba7ec",
+      "displayName": {
+        "en-US": "Synths, Protogens and Robots Meet and Beep"
+      },
+      "description": {
+        "en-US": "Come meet the robotic creatures, from protogens to synths and all beepers between!"
+      },
+      "timeSlots": [
+        {
+          "id": "8ba7ec-slot",
+          "startTime": "2026-07-22T13:00:00+02:00",
+          "endTime": "2026-07-22T14:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "silico"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "community",
+      "labelIds": [
+        "passive",
+        "fursuiter-friendly"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "9el9je",
+      "displayName": {
+        "en-US": "THE Frühshoppen Meet-Up: The Ultimate Austrian Traditional Expierence"
+      },
+      "description": {
+        "en-US": "Join us for the 1st annual Awoostria Frühschoppen with Austrian traditions, beverages & Volksmusik"
+      },
+      "timeSlots": [
+        {
+          "id": "9el9je-slot",
+          "startTime": "2026-07-25T10:00:00+02:00",
+          "endTime": "2026-07-25T12:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "linux"
+          ]
+        }
+      ],
+      "typeId": "social",
+      "trackId": "community",
+      "labelIds": [
+        "passive",
+        "fursuiter-friendly"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "9jxbux",
+      "displayName": {
+        "en-US": "From Awkward to Awesome: Master Small Talk & Overcome Approach-Anxiety"
+      },
+      "description": {
+        "en-US": "Stop overthinking—one high-energy, practice-focused session for absolute introvert beginners."
+      },
+      "timeSlots": [
+        {
+          "id": "9jxbux-slot",
+          "startTime": "2026-07-22T14:00:00+02:00",
+          "endTime": "2026-07-22T15:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "teal"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [
+        "series",
+        "noise-warning",
+        "lights-warning",
+        "anxiety-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "9rrkhu",
+      "displayName": {
+        "en-US": "Squeak 'n Meet: Inflatable Pooltoy gathering"
+      },
+      "description": {
+        "en-US": "Come and bring your squeaks and let us make some memories together and enjoy the inflatable fun!!"
+      },
+      "timeSlots": [
+        {
+          "id": "9rrkhu-slot",
+          "startTime": "2026-07-22T15:00:00+02:00",
+          "endTime": "2026-07-22T18:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "yuki-claw"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [
+        "fursuiter-friendly",
+        "anxiety-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "9y9mhf",
+      "displayName": {
+        "en-US": "Will It Double?: A DJ competition."
+      },
+      "description": {
+        "en-US": "They all can rock the dancefloor - But can they mix Dubstep with the Macarena?"
+      },
+      "timeSlots": [
+        {
+          "id": "9y9mhf-slot",
+          "startTime": "2026-07-25T16:00:00+02:00",
+          "endTime": "2026-07-25T17:30:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "tea"
+          ]
+        }
+      ],
+      "typeId": "show",
+      "trackId": "stage",
+      "labelIds": [
+        "fursuiter-friendly",
+        "noise-warning",
+        "lights-warning",
+        "anxiety-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "b3jj3b",
+      "displayName": {
+        "en-US": "Motorsports for Furs 101: Sponsored by Red Bull"
+      },
+      "description": {
+        "en-US": "Last year, we've talked about iRacing strictly however this time, we go deeper on the iceberg of Motorsports."
+      },
+      "timeSlots": [
+        {
+          "id": "b3jj3b-slot",
+          "startTime": "2026-07-23T13:00:00+02:00",
+          "endTime": "2026-07-23T16:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "luck"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [
+        "core-event"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "blcy9b",
+      "displayName": {
+        "en-US": "How my Fursona got an Indie Game: and the Pitfalls That Came With it"
+      },
+      "description": {
+        "en-US": "Hear the story of how Chipflake went from a YouTube mascot to an indie video game character!"
+      },
+      "timeSlots": [
+        {
+          "id": "blcy9b-slot",
+          "startTime": "2026-07-23T10:15:00+02:00",
+          "endTime": "2026-07-23T11:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "chipflake"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "c9vlph",
+      "displayName": {
+        "en-US": "Femboy Meetup"
+      },
+      "description": {
+        "en-US": "Get ready for our Femboy Meetup!\nWe are thrilled to host the Femboy Meetup for the 3rd time now!"
+      },
+      "timeSlots": [
+        {
+          "id": "c9vlph-slot",
+          "startTime": "2026-07-22T18:00:00+02:00",
+          "endTime": "2026-07-22T18:45:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "nahalo"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "creative",
+      "labelIds": [
+        "passive",
+        "chill",
+        "creative-exchange",
+        "fursuiter-friendly",
+        "relaxed-dress-code"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "cfjvbz",
+      "displayName": {
+        "en-US": "VJ-ing 101: Showcase + workshop"
+      },
+      "description": {
+        "en-US": "Ever wondered how video is mixed live at parties and festivals? We got you covered, come nerd out with us and try it yourself ;)"
+      },
+      "timeSlots": [
+        {
+          "id": "cfjvbz-slot",
+          "startTime": "2026-07-22T11:00:00+02:00",
+          "endTime": "2026-07-22T13:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "oskar"
+          ]
+        }
+      ],
+      "typeId": "workshop",
+      "trackId": "stage",
+      "labelIds": [
+        "noise-warning",
+        "lights-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "edupg8",
+      "displayName": {
+        "en-US": "Technologia: Highly professional science yapping"
+      },
+      "description": {
+        "en-US": "Listen to interesting & funny talks by science/tech furs about some of their favourite topics"
+      },
+      "timeSlots": [
+        {
+          "id": "edupg8-slot",
+          "startTime": "2026-07-22T20:00:00+02:00",
+          "endTime": "2026-07-22T21:30:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "verulon"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [
+        "chill"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "esnn8l",
+      "displayName": {
+        "en-US": "QI"
+      },
+      "description": {
+        "en-US": "Come and join our quiz, where wrong answers might just be correct!"
+      },
+      "timeSlots": [
+        {
+          "id": "esnn8l-slot",
+          "startTime": "2026-07-23T15:00:00+02:00",
+          "endTime": "2026-07-23T16:30:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "oolas"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "fhkpuu",
+      "displayName": {
+        "en-US": "Water Temple Opening"
+      },
+      "description": {
+        "en-US": "Join Rain as he reaches the Water Temple and opens up the puzzles and traps for you to explore!"
+      },
+      "timeSlots": [
+        {
+          "id": "fhkpuu-slot",
+          "startTime": "2026-07-23T10:00:00+02:00",
+          "endTime": "2026-07-23T10:10:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "volteer-the-story-department"
+          ]
+        }
+      ],
+      "typeId": "ceremony",
+      "trackId": "stage",
+      "labelIds": [
+        "core-event",
+        "series"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "g7m98l",
+      "displayName": {
+        "en-US": "Furraoke: Sing, howl, and let your wild side out."
+      },
+      "description": {
+        "en-US": "A furry karaoke party! Grab the mic, sing your favorite songs, and howl with friends."
+      },
+      "timeSlots": [
+        {
+          "id": "g7m98l-slot",
+          "startTime": "2026-07-23T19:00:00+02:00",
+          "endTime": "2026-07-23T23:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "kinsou-just-me"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [
+        "fursuiter-friendly",
+        "noise-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "g9u9q7",
+      "displayName": {
+        "en-US": "Raccoon Meet & Greet: Trash Wonderland"
+      },
+      "description": {
+        "en-US": "Put your bandit masks on, bring your stealable valuables, and come enjoy the company of other (not!) trash pandas!"
+      },
+      "timeSlots": [
+        {
+          "id": "g9u9q7-slot",
+          "startTime": "2026-07-24T15:00:00+02:00",
+          "endTime": "2026-07-24T15:45:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "k-los"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "community",
+      "labelIds": [
+        "fursuiter-friendly"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "gcmf7n",
+      "displayName": {
+        "en-US": "Maid Café"
+      },
+      "description": {
+        "en-US": "Get served by maids and have a good time"
+      },
+      "timeSlots": [
+        {
+          "id": "gcmf7n-slot",
+          "startTime": "2026-07-25T10:00:00+02:00",
+          "endTime": "2026-07-25T16:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "frost-voidfox"
+          ]
+        }
+      ],
+      "typeId": "social",
+      "trackId": "stage",
+      "labelIds": [
+        "core-event"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "gs9fte",
+      "displayName": {
+        "en-US": "Fursuit First Aid 101"
+      },
+      "description": {
+        "en-US": "Join us to learn about the medical risks of fursuiting and how to help when needed!"
+      },
+      "timeSlots": [
+        {
+          "id": "gs9fte-slot",
+          "startTime": "2026-07-23T11:00:00+02:00",
+          "endTime": "2026-07-23T12:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "adam"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [
+        "fursuiter-friendly",
+        "anxiety-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "gvs7pd",
+      "displayName": {
+        "en-US": "Plushie Meetup"
+      },
+      "description": {
+        "en-US": "We have a room, you bring plushies. Let's have a cozy get-together and talk about all things plush."
+      },
+      "timeSlots": [
+        {
+          "id": "gvs7pd-slot",
+          "startTime": "2026-07-22T13:00:00+02:00",
+          "endTime": "2026-07-22T15:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "fenmar"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "stage",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "h787c3",
+      "displayName": {
+        "en-US": "The Aviation Furs Meetup"
+      },
+      "description": {
+        "en-US": "Furs who love flight—come share your stories, careers, and chat about all things aviation!"
+      },
+      "timeSlots": [
+        {
+          "id": "h787c3-slot",
+          "startTime": "2026-07-24T13:00:00+02:00",
+          "endTime": "2026-07-24T14:30:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "jetfox"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "community",
+      "labelIds": [
+        "chill"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "hkcabl",
+      "displayName": {
+        "en-US": "STEMM Meetup: by DegenTech"
+      },
+      "description": {
+        "en-US": "Meet other furs in STEMM and nerd out while learning about DegenTech, the social VR group for doing just that!"
+      },
+      "timeSlots": [
+        {
+          "id": "hkcabl-slot",
+          "startTime": "2026-07-22T10:00:00+02:00",
+          "endTime": "2026-07-22T11:00:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "werewilse"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "creative",
+      "labelIds": [
+        "creative-exchange"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "hntdqd",
+      "displayName": {
+        "en-US": "How to make your own Plushie Patterns"
+      },
+      "description": {
+        "en-US": "Learn to turn your plushie ideas into patterns using tools like Plushify and other simple methods!"
+      },
+      "timeSlots": [
+        {
+          "id": "hntdqd-slot",
+          "startTime": "2026-07-25T17:30:00+02:00",
+          "endTime": "2026-07-25T19:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "fenmar"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "janksk",
+      "displayName": {
+        "en-US": "Female suiting panel"
+      },
+      "description": {
+        "en-US": "Coming later"
+      },
+      "timeSlots": [
+        {
+          "id": "janksk-slot",
+          "startTime": "2026-07-23T12:00:00+02:00",
+          "endTime": "2026-07-23T13:30:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "keeba"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "k3yahs",
+      "displayName": {
+        "en-US": "How to Animate Furries: (by Chipflake)"
+      },
+      "description": {
+        "en-US": "YouTube animator Chipflake shows a demonstration of how to animate fluffy animals by hand!"
+      },
+      "timeSlots": [
+        {
+          "id": "k3yahs-slot",
+          "startTime": "2026-07-24T10:15:00+02:00",
+          "endTime": "2026-07-24T11:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "chipflake"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "kkg3sc",
+      "displayName": {
+        "en-US": "Introduction to Shibari: Workshop"
+      },
+      "description": {
+        "en-US": "Learn basic shibari techniques with guided hands-on tying. In pairs or solo. Ropes provided."
+      },
+      "timeSlots": [
+        {
+          "id": "kkg3sc-slot",
+          "startTime": "2026-07-25T14:00:00+02:00",
+          "endTime": "2026-07-25T15:30:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "moss"
+          ]
+        }
+      ],
+      "typeId": "workshop",
+      "trackId": "community",
+      "labelIds": [
+        "fursuiter-friendly",
+        "anxiety-warning",
+        "nsfw"
+      ],
+      "minAge": 18,
+      "ticketed": false
+    },
+    {
+      "id": "lftwus",
+      "displayName": {
+        "en-US": "(Dis) Ability"
+      },
+      "description": {
+        "en-US": "Meeting for people with disabilities at Furry Fandom. \"Let's exchange!"
+      },
+      "timeSlots": [
+        {
+          "id": "lftwus-slot",
+          "startTime": "2026-07-25T19:00:00+02:00",
+          "endTime": "2026-07-25T20:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "disability"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [
+        "core-event",
+        "fursuiter-friendly",
+        "noise-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "ljcmut",
+      "displayName": {
+        "en-US": "W(h)ine with the Chairman \"In Vino Veritas\": with Noodles and Vex"
+      },
+      "description": {
+        "en-US": "Join us and have a chat! The Q&A Panel with a twist of w(h)ine! Warstories, behind the scene and your questions."
+      },
+      "timeSlots": [
+        {
+          "id": "ljcmut-slot",
+          "startTime": "2026-07-22T21:00:00+02:00",
+          "endTime": "2026-07-22T22:30:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "lilnoodles"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [
+        "core-event"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "llnvbp",
+      "displayName": {
+        "en-US": "Cis Women Meet-Up"
+      },
+      "description": {
+        "en-US": "Catering to an often overlooked but incredibly valuable part of the fandoms artistic backbone.\nSmall guided get together, providing space and opportunity for cis women to get to know each other and share thoughts and experiences."
+      },
+      "timeSlots": [
+        {
+          "id": "llnvbp-slot",
+          "startTime": "2026-07-25T10:00:00+02:00",
+          "endTime": "2026-07-25T11:00:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "silvary"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [
+        "chill"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "lpvsxq",
+      "displayName": {
+        "en-US": "Trans and Non-binary Meetup: ... Awoostria Edition 2026 Pro Max"
+      },
+      "description": {
+        "en-US": "When there is Awoo there will be Trans & NB, and if there is Trans & NB, there will be a meetup"
+      },
+      "timeSlots": [
+        {
+          "id": "lpvsxq-slot",
+          "startTime": "2026-07-22T18:00:00+02:00",
+          "endTime": "2026-07-22T19:30:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "notefox"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "community",
+      "labelIds": [
+        "chill"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "m3hkbp",
+      "displayName": {
+        "en-US": "Your First Furry Convention"
+      },
+      "description": {
+        "en-US": "Come here often? Or is this your first time at Awoostria – or at a convention at all? So why not join this little shiny panel? Experience our security department on stage! Here you get your questions answered in a furry way. Hear about all the things newbies always do wrong but need to know in order to get the most of a Furry Con!"
+      },
+      "timeSlots": [
+        {
+          "id": "m3hkbp-slot",
+          "startTime": "2026-07-22T15:00:00+02:00",
+          "endTime": "2026-07-22T16:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "firedawg"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [
+        "core-event",
+        "fursuiter-friendly"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "mqenyc",
+      "displayName": {
+        "en-US": "Deep Paws 2026: A Journey Into Fluffy Sound"
+      },
+      "description": {
+        "en-US": "A one-instrument, 60-minute performance of intelligent electronic music, composed and executed entirely on an MC-707 groovebox."
+      },
+      "timeSlots": [
+        {
+          "id": "mqenyc-slot",
+          "startTime": "2026-07-24T15:00:00+02:00",
+          "endTime": "2026-07-24T16:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "operator-burstup"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [
+        "noise-warning",
+        "late-night-panel"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "mwyqxf",
+      "displayName": {
+        "en-US": "Walk-in thermal fursuit photography: Get thermal photos of yourself in suit!"
+      },
+      "description": {
+        "en-US": "Heat signatures of fursuits are rather interesting, and here we'll make them visible!"
+      },
+      "timeSlots": [
+        {
+          "id": "mwyqxf-slot",
+          "startTime": "2026-07-22T19:00:00+02:00",
+          "endTime": "2026-07-22T20:30:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "hai"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [
+        "fursuiter-friendly"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "nu8f7r",
+      "displayName": {
+        "en-US": "Photo Stories: Idiot with a Camera"
+      },
+      "description": {
+        "en-US": "There's a story behind a lot of my photos, I'm happy to share what messed up with each."
+      },
+      "timeSlots": [
+        {
+          "id": "nu8f7r-slot",
+          "startTime": "2026-07-23T10:00:00+02:00",
+          "endTime": "2026-07-23T11:00:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "furcphoto"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "qawlnr",
+      "displayName": {
+        "en-US": "If your own view about yourself isn't necessarily 100% \"human\"...: then, trust me, you aren't alone ~"
+      },
+      "description": {
+        "en-US": "Identity is a mess, and sometimes it can even go feral. The Label one can use then is ~ Therian ~"
+      },
+      "timeSlots": [
+        {
+          "id": "qawlnr-slot",
+          "startTime": "2026-07-24T10:00:00+02:00",
+          "endTime": "2026-07-24T11:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "notefox"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "qfvufg",
+      "displayName": {
+        "en-US": "Trading Hub: Item Trade and Swap Event"
+      },
+      "description": {
+        "en-US": "A fun get-together to exchange and trade goodies such as merch, pins, keychains, artworks etc.!"
+      },
+      "timeSlots": [
+        {
+          "id": "qfvufg-slot",
+          "startTime": "2026-07-25T11:00:00+02:00",
+          "endTime": "2026-07-25T11:45:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "tea"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "qlk8xp",
+      "displayName": {
+        "en-US": "PokéFurs Meet up and Pokémon Trading Card Game \"Learn to play\": Meet other Pokéfurs and Pokémon TCG fans"
+      },
+      "description": {
+        "en-US": "Learn the Pokémon Trading Card Game and host also \"Pokemon Pack Battles\" on Demand in Group of 4-Players alongside hosting a space for Pokéfurs to connect."
+      },
+      "timeSlots": [
+        {
+          "id": "qlk8xp-slot",
+          "startTime": "2026-07-23T14:00:00+02:00",
+          "endTime": "2026-07-23T16:00:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "apollo"
+          ]
+        }
+      ],
+      "typeId": "workshop",
+      "trackId": "creative",
+      "labelIds": [
+        "creative-exchange",
+        "fursuiter-friendly"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "r3dnhy",
+      "displayName": {
+        "en-US": "Photo Safari: Catching Furries on Film"
+      },
+      "description": {
+        "en-US": "Workshop and meetup for people interested in analog photography."
+      },
+      "timeSlots": [
+        {
+          "id": "r3dnhy-slot",
+          "startTime": "2026-07-22T11:00:00+02:00",
+          "endTime": "2026-07-22T12:00:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "aury"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [
+        "creative-exchange",
+        "anxiety-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "rmkr8d",
+      "displayName": {
+        "en-US": "Gym Furs Meet: more than just chicken and rice!"
+      },
+      "description": {
+        "en-US": "Let's talk about everything Sports/Gym and get to know each other!"
+      },
+      "timeSlots": [
+        {
+          "id": "rmkr8d-slot",
+          "startTime": "2026-07-25T18:00:00+02:00",
+          "endTime": "2026-07-25T19:30:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "luna-stellar"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [
+        "fursuiter-friendly",
+        "anxiety-warning",
+        "relaxed-dress-code"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "rsksya",
+      "displayName": {
+        "en-US": "Coven of the Witches - Jungle Magick: FLINTA only panel"
+      },
+      "description": {
+        "en-US": "A place for all FLINTA coven sisters to meet, mingle, and make friends! Let`s come together and find creative ways to foster solidarity in the FLINTA furry community!"
+      },
+      "timeSlots": [
+        {
+          "id": "rsksya-slot",
+          "startTime": "2026-07-24T11:00:00+02:00",
+          "endTime": "2026-07-24T12:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "batty"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [
+        "chill"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "rvtblt",
+      "displayName": {
+        "en-US": "Scuba 101: Scuba diving with your friendly Lutren"
+      },
+      "description": {
+        "en-US": "Join this otter to learn about SCUBA diving adventures, gear, and how to start your deep dive!"
+      },
+      "timeSlots": [
+        {
+          "id": "rvtblt-slot",
+          "startTime": "2026-07-22T10:00:00+02:00",
+          "endTime": "2026-07-22T11:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "nachtkind"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "s3ecbj",
+      "displayName": {
+        "en-US": "Furry Game Developers meetup: A small meetup for anyone interested in game dev!"
+      },
+      "description": {
+        "en-US": "A small meatup of furs who are into, or are interested in making video games!"
+      },
+      "timeSlots": [
+        {
+          "id": "s3ecbj-slot",
+          "startTime": "2026-07-24T10:00:00+02:00",
+          "endTime": "2026-07-24T10:45:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "tib-averus"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "creative",
+      "labelIds": [
+        "creative-exchange"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "ssmftp",
+      "displayName": {
+        "en-US": "Dragon Meetup & Photoshoot"
+      },
+      "description": {
+        "en-US": "Come join us for the first Dragon Meetup! Here by I summon all the dragons for a fun little event to take pictures and ROAR together!"
+      },
+      "timeSlots": [
+        {
+          "id": "ssmftp-slot",
+          "startTime": "2026-07-24T15:00:00+02:00",
+          "endTime": "2026-07-24T16:30:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "ronin-saires"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "creative",
+      "labelIds": [
+        "fursuiter-friendly"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "stwstf",
+      "displayName": {
+        "en-US": "Nose-Booping: -speeddating"
+      },
+      "description": {
+        "en-US": "Think of it as an effective way of quick socializing! ^.^ Meet new ears or expand your horizons with friendly floofs. Here, you can make new friends, melt the ice, or plan upcoming activities as a group.  :3"
+      },
+      "timeSlots": [
+        {
+          "id": "stwstf-slot",
+          "startTime": "2026-07-23T10:00:00+02:00",
+          "endTime": "2026-07-23T11:00:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "gratiskralle"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "community",
+      "labelIds": [
+        "chill"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "szbka9",
+      "displayName": {
+        "en-US": "CoVahr in Concert: Ancient Expedition"
+      },
+      "description": {
+        "en-US": "Instrumental concert of film and game music, classical pieces, and furry pop culture."
+      },
+      "timeSlots": [
+        {
+          "id": "szbka9-slot",
+          "startTime": "2026-07-22T10:00:00+02:00",
+          "endTime": "2026-07-22T11:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "covahr"
+          ]
+        }
+      ],
+      "typeId": "show",
+      "trackId": "stage",
+      "labelIds": [
+        "passive"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "t79jhf",
+      "displayName": {
+        "en-US": "Streamer Panel - Year 2: Come see some local and international streamers!"
+      },
+      "description": {
+        "en-US": "We're gathering some cool Streamers and Content creators again! We're aiming to share some stories, some tips and tricks, and other bits and bobs!"
+      },
+      "timeSlots": [
+        {
+          "id": "t79jhf-slot",
+          "startTime": "2026-07-23T16:00:00+02:00",
+          "endTime": "2026-07-23T18:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "hi-m-ben"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [
+        "anxiety-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "tn8yup",
+      "displayName": {
+        "en-US": "Tinkering Projects Show and Tell"
+      },
+      "description": {
+        "en-US": "Present your projects to others, get to know what they are working on."
+      },
+      "timeSlots": [
+        {
+          "id": "tn8yup-slot",
+          "startTime": "2026-07-23T11:00:00+02:00",
+          "endTime": "2026-07-23T12:00:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "uvok"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [
+        "lights-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "ucsywr",
+      "displayName": {
+        "en-US": "Fire Temple Opening"
+      },
+      "description": {
+        "en-US": "Join Rain as he reaches the Fire Temple and opens up the puzzles and traps for you to explore!"
+      },
+      "timeSlots": [
+        {
+          "id": "ucsywr-slot",
+          "startTime": "2026-07-24T10:00:00+02:00",
+          "endTime": "2026-07-24T10:10:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "volteer-the-story-department"
+          ]
+        }
+      ],
+      "typeId": "ceremony",
+      "trackId": "stage",
+      "labelIds": [
+        "core-event",
+        "series"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "ve7wjn",
+      "displayName": {
+        "en-US": "Bunny Meet and Greet"
+      },
+      "description": {
+        "en-US": "All bunny, rabbit, and hare are invited to gather for a group photo and a fun hangout. Show off your long ears, fluffy tails, and cutest bunny poses while meeting other bun's."
+      },
+      "timeSlots": [
+        {
+          "id": "ve7wjn-slot",
+          "startTime": "2026-07-24T13:00:00+02:00",
+          "endTime": "2026-07-24T13:45:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "shimmer-light"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "creative",
+      "labelIds": [
+        "passive",
+        "fursuiter-friendly"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "vmcj8p",
+      "displayName": {
+        "en-US": "Bonfire's Thoughts: Where the Music comes to life"
+      },
+      "description": {
+        "en-US": "Come and let the music ignite your spirit. Lose yourself in an unforgettable world where music speaks what words are not able to!"
+      },
+      "timeSlots": [
+        {
+          "id": "vmcj8p-slot",
+          "startTime": "2026-07-25T21:00:00+02:00",
+          "endTime": "2026-07-25T22:30:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "seishin"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [
+        "chill",
+        "creative-exchange",
+        "fursuiter-friendly",
+        "late-night-panel"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "vqktjd",
+      "displayName": {
+        "en-US": "Earth Temple Opening"
+      },
+      "description": {
+        "en-US": "Join Rain as he reaches the Earth Temple and opens up the puzzles and traps for you to explore!"
+      },
+      "timeSlots": [
+        {
+          "id": "vqktjd-slot",
+          "startTime": "2026-07-22T16:00:00+02:00",
+          "endTime": "2026-07-22T16:10:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "volteer-the-story-department"
+          ]
+        }
+      ],
+      "typeId": "ceremony",
+      "trackId": "stage",
+      "labelIds": [
+        "core-event",
+        "series"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "w7hu9j",
+      "displayName": {
+        "en-US": "Petplay & Rubberfurs Social"
+      },
+      "description": {
+        "en-US": "Unleash your inner dog, wear your pet gear, have fun with other pups or enjoy being a rubber animal."
+      },
+      "timeSlots": [
+        {
+          "id": "w7hu9j-slot",
+          "startTime": "2026-07-24T19:00:00+02:00",
+          "endTime": "2026-07-24T20:30:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "kruemel"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "stage",
+      "labelIds": [
+        "fursuiter-friendly",
+        "relaxed-dress-code"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "wdgmpc",
+      "displayName": {
+        "en-US": "Beyond wolves and cats: How to draw any animal"
+      },
+      "description": {
+        "en-US": "Learn the techniques on how to draw any animal besides canines and felines."
+      },
+      "timeSlots": [
+        {
+          "id": "wdgmpc-slot",
+          "startTime": "2026-07-22T15:00:00+02:00",
+          "endTime": "2026-07-22T15:45:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "griffin-bandida"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "wnzacr",
+      "displayName": {
+        "en-US": "Plushie friends meet-up: Bring your favourite plushie!"
+      },
+      "description": {
+        "en-US": "A show-and-tell for all plushie friends! Bring your favourite plush toy, show and tell us about it!"
+      },
+      "timeSlots": [
+        {
+          "id": "wnzacr-slot",
+          "startTime": "2026-07-24T10:45:00+02:00",
+          "endTime": "2026-07-24T11:45:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "batty"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [
+        "chill"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "xauepx",
+      "displayName": {
+        "en-US": "Break your Indie Game: Understanding Concepts and Game Development"
+      },
+      "description": {
+        "en-US": "Get yourself some Skills! The Mystery of Gamedevs, we will explore the Background of the \"Play Button\"!"
+      },
+      "timeSlots": [
+        {
+          "id": "xauepx-slot",
+          "startTime": "2026-07-24T12:00:00+02:00",
+          "endTime": "2026-07-24T14:00:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "lungdrache"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [
+        "passive",
+        "fursuiter-friendly",
+        "anxiety-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "xmfmhe",
+      "displayName": {
+        "en-US": "Cheese & Wine Tasting"
+      },
+      "description": {
+        "en-US": "Bring your favorite bottle of wine and your favorite cheese for everyone to enjoy!"
+      },
+      "timeSlots": [
+        {
+          "id": "xmfmhe-slot",
+          "startTime": "2026-07-25T16:00:00+02:00",
+          "endTime": "2026-07-25T17:30:00+02:00",
+          "roomIds": [
+            "healthlab"
+          ],
+          "hostIds": [
+            "lumi-snow-leopard"
+          ]
+        }
+      ],
+      "typeId": "social",
+      "trackId": "community",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "yn7ddf",
+      "displayName": {
+        "en-US": "Dancerfurs Meet and Dance"
+      },
+      "description": {
+        "en-US": "Meet for furs who dance or want to get into dancing."
+      },
+      "timeSlots": [
+        {
+          "id": "yn7ddf-slot",
+          "startTime": "2026-07-23T11:00:00+02:00",
+          "endTime": "2026-07-23T12:30:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "kura"
+          ]
+        }
+      ],
+      "typeId": "meetup",
+      "trackId": "stage",
+      "labelIds": [
+        "fursuiter-friendly",
+        "noise-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "zgzzjr",
+      "displayName": {
+        "en-US": "DRAW & SWAP: SWAP & DRAW"
+      },
+      "description": {
+        "en-US": "Draw something and pass it on, see how you can finish someone else's drawing! Create some collaborative art, together!"
+      },
+      "timeSlots": [
+        {
+          "id": "zgzzjr-slot",
+          "startTime": "2026-07-23T12:00:00+02:00",
+          "endTime": "2026-07-23T13:30:00+02:00",
+          "roomIds": [
+            "artist"
+          ],
+          "hostIds": [
+            "aj"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "creative",
+      "labelIds": [
+        "creative-exchange",
+        "anxiety-warning"
+      ],
+      "minAge": 0,
+      "ticketed": false
+    },
+    {
+      "id": "zsqgwy",
+      "displayName": {
+        "en-US": "Chipflake Q&A"
+      },
+      "description": {
+        "en-US": "Ask YouTube animator Chipflake anything you like!"
+      },
+      "timeSlots": [
+        {
+          "id": "zsqgwy-slot",
+          "startTime": "2026-07-25T20:00:00+02:00",
+          "endTime": "2026-07-25T20:45:00+02:00",
+          "roomIds": [
+            "main-stage"
+          ],
+          "hostIds": [
+            "chipflake"
+          ]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "stage",
+      "labelIds": [],
+      "minAge": 0,
+      "ticketed": false
+    }
+  ]
+}

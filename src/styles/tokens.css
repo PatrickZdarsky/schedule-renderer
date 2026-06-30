@@ -1,0 +1,23 @@
+:root {
+  --theme-page-background: transparent;
+  --theme-surface: rgba(24, 24, 27, 0.88);
+  --theme-surface-strong: rgba(39, 39, 42, 0.96);
+  --theme-border: rgba(255, 255, 255, 0.12);
+  --theme-text: #ffffff;
+  --theme-text-muted: #c8cad7;
+  --theme-primary: #e44763;
+  --theme-primary-strong: #cd4059;
+  --theme-warning: #f59e0b;
+  --theme-danger: #ef4444;
+  --theme-success: #22c55e;
+  --theme-shadow: rgba(0, 0, 0, 0.42);
+  --theme-font-body: "Inter var", Inter, system-ui, sans-serif;
+  --theme-font-accent: "Caveat", cursive;
+  --layout-region-width-vw: 34;
+  --layout-region-min-width: 340px;
+  --layout-region-max-width: 760px;
+  --layout-outer-padding: 24px;
+  --layout-card-gap: 18px;
+  --radius-card: 26px;
+  --radius-pill: 999px;
+}

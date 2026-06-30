@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/FurryApp/event-schedule-schema/schema/entity/host.schema.json",
+  "title": "Host",
+  "type": "object",
+  "required": ["id", "displayName"],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "externalLinks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "displayName": {
+            "type": "object",
+            "patternProperties": {
+              "^[a-z]{2}(-[A-Z]{2})?$": {
+                "type": "string"
+              }
+            }
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["displayName", "url"]
+      }
+    },
+    "imageThumbnailUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional link to a thumbnail image."
+    },
+    "imageBannerUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional link to a larger banner image."
+    },
+    "x-meta": {
+      "$ref": "../partials/x-meta.schema.json"
+    }
+  },
+  "additionalProperties": false
+}

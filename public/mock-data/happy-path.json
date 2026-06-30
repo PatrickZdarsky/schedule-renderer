@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-06-18T14:28:00+02:00",
+  "source": {
+    "name": "Awoostria Mock Schedule",
+    "vendorId": "mock",
+    "appVersion": "1.0.0",
+    "lastModifiedAt": "2026-06-18T14:27:30+02:00"
+  },
+  "event": {
+    "id": "awoostria-2026",
+    "displayName": {
+      "en-US": "Awoostria 2026"
+    },
+    "formattedAddress": "Vienna, Austria",
+    "startTime": "2026-06-18T08:00:00+02:00",
+    "endTime": "2026-06-20T23:00:00+02:00",
+    "timezone": "Europe/Vienna",
+    "description": {
+      "en-US": "Mock schedule data for signage development."
+    }
+  },
+  "membershipLevels": [],
+  "tracks": [
+    {
+      "id": "stage",
+      "displayName": {
+        "en-US": "Stage"
+      }
+    },
+    {
+      "id": "panels",
+      "displayName": {
+        "en-US": "Panels"
+      }
+    }
+  ],
+  "sessionTypes": [
+    {
+      "id": "panel",
+      "displayName": {
+        "en-US": "Panel"
+      }
+    },
+    {
+      "id": "show",
+      "displayName": {
+        "en-US": "Show"
+      }
+    }
+  ],
+  "labels": [],
+  "venues": [
+    {
+      "id": "hyatt",
+      "displayName": {
+        "en-US": "Hyatt Regency Vienna"
+      },
+      "formattedAddress": "Vienna"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "main-stage",
+      "displayName": {
+        "en-US": "Main Stage"
+      },
+      "venueId": "hyatt"
+    },
+    {
+      "id": "panel-1",
+      "displayName": {
+        "en-US": "Panel Room 1"
+      },
+      "venueId": "hyatt"
+    },
+    {
+      "id": "workshop",
+      "displayName": {
+        "en-US": "Workshop Room"
+      },
+      "venueId": "hyatt"
+    }
+  ],
+  "hosts": [
+    {
+      "id": "host-rain",
+      "displayName": "Rain"
+    },
+    {
+      "id": "host-kian",
+      "displayName": "Kian"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "opening-chat",
+      "displayName": {
+        "en-US": "Running a Friendly Furry Con"
+      },
+      "description": {
+        "en-US": "A conversation about community, accessibility, and keeping events welcoming."
+      },
+      "timeSlots": [
+        {
+          "id": "opening-chat-slot",
+          "startTime": "2026-06-18T14:00:00+02:00",
+          "endTime": "2026-06-18T15:00:00+02:00",
+          "roomIds": ["panel-1"],
+          "hostIds": ["host-rain"]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "panels"
+    },
+    {
+      "id": "first-con",
+      "displayName": {
+        "en-US": "How to Survive Your First Con"
+      },
+      "description": {
+        "en-US": "Practical first-con advice from check-in to closing ceremony."
+      },
+      "timeSlots": [
+        {
+          "id": "first-con-slot",
+          "startTime": "2026-06-18T15:15:00+02:00",
+          "endTime": "2026-06-18T16:00:00+02:00",
+          "roomIds": ["panel-1"],
+          "hostIds": ["host-kian"]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "panels"
+    },
+    {
+      "id": "art-jam",
+      "displayName": {
+        "en-US": "Community Art Jam"
+      },
+      "timeSlots": [
+        {
+          "id": "art-jam-slot",
+          "startTime": "2026-06-18T16:20:00+02:00",
+          "endTime": "2026-06-18T17:10:00+02:00",
+          "roomIds": ["panel-1"]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "panels"
+    },
+    {
+      "id": "dance-showcase",
+      "displayName": {
+        "en-US": "Fursuit Dance Showcase"
+      },
+      "timeSlots": [
+        {
+          "id": "dance-showcase-slot",
+          "startTime": "2026-06-18T14:30:00+02:00",
+          "endTime": "2026-06-18T15:30:00+02:00",
+          "roomIds": ["main-stage"]
+        }
+      ],
+      "typeId": "show",
+      "trackId": "stage"
+    },
+    {
+      "id": "crafting",
+      "displayName": {
+        "en-US": "Prop Fixing Workshop"
+      },
+      "timeSlots": [
+        {
+          "id": "crafting-slot",
+          "startTime": "2026-06-18T14:45:00+02:00",
+          "endTime": "2026-06-18T15:45:00+02:00",
+          "roomIds": ["workshop"]
+        }
+      ],
+      "typeId": "panel",
+      "trackId": "panels"
+    }
+  ]
+}

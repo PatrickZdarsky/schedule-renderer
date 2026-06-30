@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/FurryApp/event-schedule-schema/schema/sessionTypes.schema.json",
+  "title": "SessionTypes",
+  "type": "array",
+  "items": {
+    "$ref": "entity/sessionType.schema.json"
+  }
+}
