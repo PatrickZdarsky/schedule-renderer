@@ -31,7 +31,8 @@
   "layout": {
     "regionWidthVw": 34,
     "regionMinWidthPx": 340,
-    "regionMaxWidthPx": 760,
+    "regionMaxWidthPx": 620,
+    "uiScale": 1,
     "outerPaddingPx": 24,
     "cardGapPx": 18,
     "align": "left"

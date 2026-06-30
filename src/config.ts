@@ -19,6 +19,7 @@ export interface LayoutConfig {
   regionWidthVw: number;
   regionMinWidthPx: number;
   regionMaxWidthPx: number;
+  uiScale: number;
   outerPaddingPx: number;
   cardGapPx: number;
   align: "left" | "center";
@@ -44,6 +45,7 @@ export interface RuntimeConfig {
 
 interface ThemeDocumentOverrides {
   pageBackgroundColor?: string;
+  uiScale?: number;
 }
 
 const defaultConfig: RuntimeConfig = {
@@ -79,7 +81,8 @@ const defaultConfig: RuntimeConfig = {
   layout: {
     regionWidthVw: 34,
     regionMinWidthPx: 340,
-    regionMaxWidthPx: 760,
+    regionMaxWidthPx: 620,
+    uiScale: 1,
     outerPaddingPx: 24,
     cardGapPx: 18,
     align: "left",
@@ -127,6 +130,16 @@ function normalizeBackgroundColorCandidate(value: string): string {
   return trimmed;
 }
 
+function normalizeScaleCandidate(value: string): number | null {
+  const parsed = Number.parseFloat(value.trim());
+
+  if (!Number.isFinite(parsed)) {
+    return null;
+  }
+
+  return Math.min(2, Math.max(0.5, parsed));
+}
+
 export function readPageBackgroundOverride(location: Pick<Location, "search">): string | null {
   const query = new URLSearchParams(location.search);
   const rawValue = query.get("bg") ?? query.get("background");
@@ -145,12 +158,31 @@ export function readPageBackgroundOverride(location: Pick<Location, "search">): 
   return null;
 }
 
+export function readUiScaleOverride(location: Pick<Location, "search">): number | null {
+  const query = new URLSearchParams(location.search);
+  const rawValue = query.get("scale") ?? query.get("uiScale");
+
+  if (!rawValue || rawValue.trim().length === 0) {
+    return null;
+  }
+
+  const normalizedValue = normalizeScaleCandidate(rawValue);
+
+  if (normalizedValue !== null) {
+    return normalizedValue;
+  }
+
+  console.warn(`Ignoring invalid scale override: ${rawValue}`);
+  return null;
+}
+
 export function applyThemeToDocument(
   config: RuntimeConfig,
   overrides: ThemeDocumentOverrides = {},
 ): void {
   const root = document.documentElement;
   const pageBackgroundColor = overrides.pageBackgroundColor ?? config.theme.pageBackgroundColor;
+  const uiScale = overrides.uiScale ?? config.layout.uiScale;
 
   root.style.setProperty("--theme-page-background", pageBackgroundColor);
   root.style.setProperty("--theme-surface", config.theme.surfaceColor);
@@ -169,6 +201,7 @@ export function applyThemeToDocument(
   root.style.setProperty("--layout-region-width-vw", String(config.layout.regionWidthVw));
   root.style.setProperty("--layout-region-min-width", `${config.layout.regionMinWidthPx}px`);
   root.style.setProperty("--layout-region-max-width", `${config.layout.regionMaxWidthPx}px`);
+  root.style.setProperty("--layout-ui-scale", String(uiScale));
   root.style.setProperty("--layout-outer-padding", `${config.layout.outerPaddingPx}px`);
   root.style.setProperty("--layout-card-gap", `${config.layout.cardGapPx}px`);
 }

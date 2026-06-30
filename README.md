@@ -11,7 +11,7 @@ Small signage-oriented frontend for displaying Awoostria schedule data inside Xi
 - stale data warnings
 - transparent page background
 - left-column layout sized for a 16:9 display region
-- runtime-configurable colors, fonts, and layout width through [public/config.json](/home/patrick/Projects/AwooScheduleRenderer/public/config.json)
+- runtime-configurable colors, fonts, layout width, and card scale through [public/config.json](/home/patrick/Projects/AwooScheduleRenderer/public/config.json)
 
 ## Routes
 
@@ -59,16 +59,19 @@ Key options:
 - `theme.surfaceColor` and `theme.surfaceStrongColor`: card backgrounds
 - `layout.regionWidthVw`: roughly how much of the 16:9 screen width the renderer should occupy
 - `layout.regionMaxWidthPx`: hard maximum width of the left column
+- `layout.uiScale`: scales the cards, spacing, and type together; use `0.9` to fit more or `1.1` to enlarge
 - `layout.align`: `left` or `center`
 
 ## Dev background override
 
-For quick layout testing, you can override the page background color from the URL without editing `config.json`.
+For quick layout testing, you can override the page background color and UI scale from the URL without editing `config.json`.
 
 Supported query params:
 
 - `bg`
 - `background`
+- `scale`
+- `uiScale`
 
 Examples:
 
@@ -76,8 +79,10 @@ Examples:
 - `/signage/overview?bg=0f172a`
 - `/signage/overview?bg=%23e44763`
 - `/signage/overview?bg=rgba(15,23,42,0.92)`
+- `/signage/overview?scale=0.9`
+- `/signage/overview?bg=0f172a&scale=0.88`
 
-If no override is present, the renderer keeps using `theme.pageBackgroundColor` from `public/config.json`.
+If no override is present, the renderer keeps using `theme.pageBackgroundColor` and `layout.uiScale` from `public/config.json`.
 
 ## Preview a specific convention time
 

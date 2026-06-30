@@ -64,7 +64,7 @@ export function renderOverviewView(input: RenderOverviewViewInput): string {
       : `<p class="empty-state">No rooms have activity in the current overview window.</p>`;
 
   return [
-    renderHero("Overview", "Room Overview", `By room for the next ${windowMinutes} minutes`),
+    renderHero("Overview", null, `By room for the next ${windowMinutes} minutes`),
     renderCard(null, body, "card--overview-shell"),
   ].join("");
 }

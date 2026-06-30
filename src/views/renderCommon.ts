@@ -162,11 +162,11 @@ export function renderLaterList(items: PresentedOccurrence[], timezone: string):
   `;
 }
 
-export function renderHero(eyebrow: string, title: string, subtitle: string | null): string {
+export function renderHero(eyebrow: string, title: string | null, subtitle: string | null): string {
   return `
     <section class="hero">
       <p class="hero__eyebrow">${escapeHtml(eyebrow)}</p>
-      <h1 class="hero__title">${escapeHtml(title)}</h1>
+      ${title ? `<h1 class="hero__title">${escapeHtml(title)}</h1>` : ""}
       ${subtitle ? `<p class="hero__subtitle">${escapeHtml(subtitle)}</p>` : ""}
     </section>
   `;

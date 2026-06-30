@@ -1,5 +1,5 @@
 import type { RuntimeConfig } from "./config";
-import { applyThemeToDocument, loadRuntimeConfig, readPageBackgroundOverride } from "./config";
+import { applyThemeToDocument, loadRuntimeConfig, readPageBackgroundOverride, readUiScaleOverride } from "./config";
 import { getCompactItems, getLastUpdatedMs, getOverviewRooms, getRoomViewModel, getStaleLevel } from "./domain/selectors";
 import { formatClockTime, formatLastUpdated } from "./domain/time";
 import { parseRoute } from "./router";
@@ -19,7 +19,7 @@ function renderChromeHeader(state: AppState, timezone: string): string {
   return `
     <header class="topbar">
       ${logoMarkup}
-      <div>
+      <div class="topbar__main">
         <!-- <p class="topbar__label">Awoostria signage</p> -->
         <h2 class="topbar__title">${escapeHtml(state.schedule?.eventName ?? "Schedule Renderer")}</h2>
       </div>
@@ -215,6 +215,7 @@ export async function bootApplication(): Promise<void> {
   const applyLocationTheme = (): void => {
     applyThemeToDocument(config, {
       pageBackgroundColor: readPageBackgroundOverride(window.location) ?? undefined,
+      uiScale: readUiScaleOverride(window.location) ?? undefined,
     });
   };
 

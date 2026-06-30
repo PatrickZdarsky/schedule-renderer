@@ -1,4 +1,5 @@
 :root {
+  --layout-ui-scale: 1;
   --theme-page-background: transparent;
   --theme-surface: rgba(24, 24, 27, 0.88);
   --theme-surface-strong: rgba(39, 39, 42, 0.96);
@@ -15,9 +16,10 @@
   --theme-font-accent: "Caveat", cursive;
   --layout-region-width-vw: 34;
   --layout-region-min-width: 340px;
-  --layout-region-max-width: 760px;
+  --layout-region-max-width: 620px;
   --layout-outer-padding: 24px;
   --layout-card-gap: 18px;
-  --radius-card: 26px;
+  --radius-card: calc(26px * var(--layout-ui-scale));
   --radius-pill: 999px;
+  font-size: calc(16px * var(--layout-ui-scale));
 }
