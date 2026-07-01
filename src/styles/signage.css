@@ -60,6 +60,7 @@
 
 .topbar__title {
   margin: 0;
+  font-family: var(--theme-font-accent);
   font-size: clamp(1.25rem, 2vw, 1.75rem);
   font-weight: 800;
   line-height: 1.05;
@@ -93,7 +94,7 @@
 .hero__eyebrow {
   margin: 0 0 calc(8px * var(--layout-ui-scale));
   color: var(--theme-primary);
-  font-family: var(--theme-font-body);
+  font-family: var(--theme-font-accent);
   font-size: clamp(0.95rem, 1.4vw, 1.15rem);
   font-weight: 750;
   letter-spacing: 0.12em;
@@ -103,7 +104,9 @@
 
 .hero__title {
   margin: 0;
+  font-family: var(--theme-font-accent);
   font-size: clamp(2.3rem, 4.6vw, 4.5rem);
+  font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.04em;
 }
@@ -143,6 +146,7 @@
 .card__header {
   margin-bottom: calc(14px * var(--layout-ui-scale));
   color: var(--theme-text-muted);
+  font-family: var(--theme-font-accent);
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -241,6 +245,7 @@
 .occurrence__location {
   margin: 0;
   color: var(--theme-text);
+  font-family: var(--theme-font-accent);
   font-size: clamp(0.95rem, 1.5vw, 1.05rem);
   font-weight: 800;
   letter-spacing: 0.03em;
@@ -248,6 +253,7 @@
 
 .occurrence__title {
   margin: 0;
+  font-family: var(--theme-font-accent);
   font-size: clamp(1.45rem, 2.7vw, 2.4rem);
   line-height: 1.02;
   letter-spacing: -0.03em;
@@ -380,6 +386,7 @@
 .room-board__title {
   margin: 0;
   color: var(--theme-text);
+  font-family: var(--theme-font-accent);
   font-size: clamp(1.25rem, 2vw, 1.55rem);
   font-weight: 850;
   letter-spacing: -0.03em;

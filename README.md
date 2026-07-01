@@ -4,7 +4,7 @@ Small signage-oriented frontend for displaying Awoostria schedule data inside Xi
 
 ## What is implemented
 
-- room, overview, and compact views
+- room, room-multi, overview, and compact views
 - polling-based schedule refresh
 - schema validation with the local `schedule-schema` repository
 - last-known-good cache in `localStorage`
@@ -16,7 +16,9 @@ Small signage-oriented frontend for displaying Awoostria schedule data inside Xi
 ## Routes
 
 - `/signage/room?room=panel-1`
+- `/signage/room-multi?rooms=panel-1,main-stage`
 - `/signage/overview`
+- `/signage/overview?rooms=2`
 - `/signage/compact`
 
 The app is a small SPA, so the nginx config rewrites unknown paths to `index.html`.
@@ -61,6 +63,8 @@ Key options:
 - `layout.regionMaxWidthPx`: hard maximum width of the left column
 - `layout.uiScale`: scales the cards, spacing, and type together; use `0.9` to fit more or `1.1` to enlarge
 - `layout.align`: `left` or `center`
+- `/signage/room-multi?rooms=room-a,room-b`: shows those exact rooms in that exact order
+- `rooms` query param on `/signage/overview`: limits the overview to the first N active rooms, for example `?rooms=2`
 
 ## Dev background override
 
@@ -92,6 +96,7 @@ Examples:
 
 - `/signage/overview?now=2026-07-23T14:30:00+02:00`
 - `/signage/room?room=main-stage&now=2026-07-24T20:00:00+02:00`
+- `/signage/room-multi?rooms=main-stage,panel-1&now=2026-07-24T20:00:00+02:00`
 - `/signage/room?room=artist&now=2026-07-25T11:00:00+02:00`
 
 You can combine both helpers:

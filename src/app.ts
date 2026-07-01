@@ -1,6 +1,6 @@
 import type { RuntimeConfig } from "./config";
 import { applyThemeToDocument, loadRuntimeConfig, readPageBackgroundOverride, readUiScaleOverride } from "./config";
-import { getCompactItems, getLastUpdatedMs, getOverviewRooms, getRoomViewModel, getStaleLevel } from "./domain/selectors";
+import { getCompactItems, getLastUpdatedMs, getMultiRoomViewModels, getOverviewRooms, getRoomViewModel, getStaleLevel } from "./domain/selectors";
 import { formatClockTime, formatLastUpdated } from "./domain/time";
 import { parseRoute } from "./router";
 import type { AppState } from "./state/store";
@@ -9,6 +9,7 @@ import { escapeHtml } from "./ui/escapeHtml";
 import { renderStatusBanner } from "./ui/staleBanner";
 import { renderCompactView } from "./views/renderCompactView";
 import { renderOverviewView } from "./views/renderOverviewView";
+import { renderRoomMultiView } from "./views/renderRoomMultiView";
 import { renderRoomView } from "./views/renderRoomView";
 
 function renderChromeHeader(state: AppState, timezone: string): string {
@@ -171,6 +172,21 @@ function renderViewBody(state: AppState): string {
         nowMs: state.nowMs,
         windowMinutes: state.route.windowMinutes,
       });
+    case "room-multi":
+      return renderRoomMultiView({
+        rooms: state.schedule
+          ? getMultiRoomViewModels(
+              state.schedule,
+              state.route.roomIds,
+              state.nowMs,
+              state.config,
+              state.changesByOccurrenceId,
+            )
+          : [],
+        timezone: state.schedule.timezone,
+        nowMs: state.nowMs,
+        windowMinutes: state.route.windowMinutes,
+      });
     case "overview":
     default:
       return renderOverviewView({
@@ -180,6 +196,7 @@ function renderViewBody(state: AppState): string {
           state.nowMs,
           state.config,
           state.changesByOccurrenceId,
+          state.route.roomLimit,
         ),
         timezone: state.schedule.timezone,
         nowMs: state.nowMs,

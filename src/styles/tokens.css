@@ -13,7 +13,7 @@
   --theme-success: #22c55e;
   --theme-shadow: rgba(0, 0, 0, 0.42);
   --theme-font-body: "Inter var", Inter, system-ui, sans-serif;
-  --theme-font-accent: "Caveat", cursive;
+  --theme-font-accent: "Montserrat Local", "Montserrat", sans-serif;
   --layout-region-width-vw: 34;
   --layout-region-min-width: 340px;
   --layout-region-max-width: 620px;

@@ -26,6 +26,11 @@ export interface RoomViewModel {
   emptyMessage: string | null;
 }
 
+export interface MultiRoomViewModel {
+  requestedRoomId: string;
+  model: RoomViewModel;
+}
+
 export interface OverviewRoomModel {
   room: NormalizedRoom;
   current: PresentedOccurrence | null;
@@ -143,16 +148,30 @@ export function getOverviewItems(
     .slice(0, 14);
 }
 
+export function getMultiRoomViewModels(
+  schedule: NormalizedSchedule,
+  roomIds: string[],
+  nowMs: number,
+  config: RuntimeConfig,
+  changesByOccurrenceId: Map<string, OccurrenceChangeInfo>,
+): MultiRoomViewModel[] {
+  return roomIds.map((roomId) => ({
+    requestedRoomId: roomId,
+    model: getRoomViewModel(schedule, roomId, nowMs, config, changesByOccurrenceId),
+  }));
+}
+
 export function getOverviewRooms(
   schedule: NormalizedSchedule,
   windowMinutes: number,
   nowMs: number,
   config: RuntimeConfig,
   changesByOccurrenceId: Map<string, OccurrenceChangeInfo>,
+  roomLimit: number | null = null,
 ): OverviewRoomModel[] {
   const windowEndMs = nowMs + windowMinutes * 60_000;
 
-  return Array.from(schedule.roomsById.values())
+  const rooms = Array.from(schedule.roomsById.values())
     .map((room) => {
       const roomOccurrences = schedule.occurrencesByRoomId.get(room.id) ?? [];
       const presented = filterVisibleOccurrences(
@@ -178,6 +197,8 @@ export function getOverviewRooms(
       };
     })
     .filter((room) => room.current !== null || room.upcoming !== null);
+
+  return roomLimit !== null ? rooms.slice(0, roomLimit) : rooms;
 }
 
 export function getCompactItems(

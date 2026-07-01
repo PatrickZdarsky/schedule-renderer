@@ -76,7 +76,7 @@ const defaultConfig: RuntimeConfig = {
     successColor: "#22c55e",
     shadowColor: "rgba(0, 0, 0, 0.42)",
     fontFamilyBody: "\"Inter var\", Inter, system-ui, sans-serif",
-    fontFamilyAccent: "\"Caveat\", cursive",
+    fontFamilyAccent: "\"Montserrat Local\", \"Montserrat\", sans-serif",
   },
   layout: {
     regionWidthVw: 34,
