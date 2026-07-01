@@ -12,5 +12,26 @@ export default defineConfig({
   test: {
     environment: "node",
     include: ["tests/**/*.test.ts"],
+    coverage: {
+      provider: "v8",
+      reporter: ["text", "text-summary", "json-summary", "cobertura", "html"],
+      reportsDirectory: "./coverage",
+      exclude: [
+        "dist/**",
+        "schedule-schema/**",
+        "public/**",
+        "scripts/**",
+        "tests/**",
+        "vite.config.ts",
+        "src/main.ts",
+        "src/types/**",
+      ],
+      thresholds: {
+        lines: 80,
+        functions: 80,
+        statements: 80,
+        branches: 70,
+      },
+    },
   },
 });

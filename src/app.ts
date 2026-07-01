@@ -41,20 +41,13 @@ function renderStatusMessage(state: AppState): { level: "fresh" | "warning" | "e
     };
   }
 
-  
   if (state.route.nowOverrideMs !== null) {
-    return {
-    level: "fresh",
-    message: null,
-    secondary: null,
-  };
     return {
       level: "fresh",
       message: "Preview mode is active.",
       secondary: "Using the timestamp from the URL now parameter.",
     };
   }
-    
 
   const staleLevel = getStaleLevel(state.nowMs, state.lastFetchSucceededAt, state.config);
 

@@ -1,5 +1,10 @@
 # Awoostria Schedule Renderer
 
+[![CI](https://github.com/PatrickZdarsky/schedule-renderer/actions/workflows/ci.yml/badge.svg)](https://github.com/PatrickZdarsky/schedule-renderer/actions/workflows/ci.yml)
+[![Release Docker Image](https://github.com/PatrickZdarsky/schedule-renderer/actions/workflows/release.yml/badge.svg)](https://github.com/PatrickZdarsky/schedule-renderer/actions/workflows/release.yml)
+[![Coverage Gate](https://img.shields.io/badge/coverage%20gate-80%25-brightgreen)](https://github.com/PatrickZdarsky/schedule-renderer/actions/workflows/ci.yml)
+[![Docker Image](https://img.shields.io/badge/ghcr.io-ready-blue)](https://github.com/PatrickZdarsky/schedule-renderer/pkgs/container/schedule-renderer)
+
 Small signage-oriented frontend for displaying Awoostria schedule data inside Xibo web widgets.
 
 ## What is implemented
@@ -40,6 +45,17 @@ npm run build
 
 ```bash
 npm run test
+npm run test:coverage
+```
+
+Coverage is enforced in CI with minimum thresholds of `80%` for lines/statements/functions and `70%` for branches.
+
+## Docker
+
+GitHub Actions publishes multi-architecture container images to GHCR from `main` and version tags.
+
+```bash
+docker pull ghcr.io/patrickzdarsky/schedule-renderer:latest
 ```
 
 ## Regenerate the full convention mock
