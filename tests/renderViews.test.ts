@@ -43,10 +43,10 @@ function createPresentedOccurrence(overrides: Partial<PresentedOccurrence> = {})
 
 describe("renderers", () => {
   it("renders heroes without a title when requested", () => {
-    const markup = renderHero("Overview", null, "By room for the next 240 minutes");
+    const markup = renderHero("Overview", null, "By room for the next 4 hours");
 
     expect(markup).toContain("Overview");
-    expect(markup).toContain("By room for the next 240 minutes");
+    expect(markup).toContain("By room for the next 4 hours");
     expect(markup).not.toContain("hero__title");
   });
 
@@ -161,6 +161,7 @@ describe("renderers", () => {
     expect(markup).toContain("Overview");
     expect(markup).not.toContain("Room Overview");
     expect(markup).toContain("Main Stage");
+    expect(markup).toContain("By room for the next 4 hours");
   });
 
   it("renders the multi-room view with missing-room guidance", () => {

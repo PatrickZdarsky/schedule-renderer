@@ -1,5 +1,6 @@
 {
   "scheduleDataEndpoint": "/mock-data/full-convention-2026.json",
+  "roomWhitelist": null,
   "timezone": "Europe/Vienna",
   "preferredLocale": "en-US",
   "refreshSeconds": 20,

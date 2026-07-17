@@ -118,6 +118,20 @@ describe("route smoke tests", () => {
     expect(text).not.toContain("Room Overview");
   });
 
+  it("applies the global room whitelist across route rendering", async () => {
+    await bootAt("/signage/overview?now=2026-06-18T14:40:00%2B02:00", {
+      config: createRuntimeConfig({
+        roomWhitelist: ["panel-1"],
+      }),
+    });
+
+    const text = getAppText();
+
+    expect(text).toContain("Panel Room 1");
+    expect(text).not.toContain("Main Stage");
+    expect(text).not.toContain("Workshop Room");
+  });
+
   it("boots the single-room route and renders current and next content", async () => {
     await bootAt("/signage/room?room=panel-1&now=2026-06-18T14:40:00%2B02:00");
 

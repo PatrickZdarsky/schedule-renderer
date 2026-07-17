@@ -15,6 +15,7 @@ function parseInZone(timestamp: string, timezone: string): DateTime {
 
 export function normalizeSchedule(schedule: ScheduleData, config: RuntimeConfig): NormalizedSchedule {
   const timezone = schedule.event.timezone || config.timezone;
+  const allowedRoomIds = config.roomWhitelist ? new Set(config.roomWhitelist) : null;
   const venuesById = new Map(
     schedule.venues.map((venue) => [
       venue.id,
@@ -26,6 +27,10 @@ export function normalizeSchedule(schedule: ScheduleData, config: RuntimeConfig)
   const roomsById = new Map<string, NormalizedRoom>();
 
   for (const room of schedule.rooms ?? []) {
+    if (allowedRoomIds && !allowedRoomIds.has(room.id)) {
+      continue;
+    }
+
     roomsById.set(room.id, {
       id: room.id,
       name: localizeText(room.displayName, config.preferredLocale, room.id),
@@ -50,7 +55,14 @@ export function normalizeSchedule(schedule: ScheduleData, config: RuntimeConfig)
         continue;
       }
 
-      const roomIds = [...(timeSlot.roomIds ?? [])];
+      const roomIds = [...(timeSlot.roomIds ?? [])].filter((roomId) =>
+        allowedRoomIds ? allowedRoomIds.has(roomId) : true,
+      );
+
+      if (roomIds.length === 0) {
+        continue;
+      }
+
       const roomNames = roomIds.map((roomId) => roomsById.get(roomId)?.name ?? roomId);
       const hostIds = [...(timeSlot.hostIds ?? [])];
       const hostNames = hostIds.map((hostId) => hostNamesById.get(hostId) ?? hostId);

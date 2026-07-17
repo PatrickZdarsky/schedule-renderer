@@ -12,6 +12,7 @@ export function createRuntimeConfig(overrides: RuntimeConfigOverrides = {}): Run
 
   return {
     scheduleDataEndpoint: "/mock-data/happy-path.json",
+    roomWhitelist: null,
     timezone: "Europe/Vienna",
     preferredLocale: "en-US",
     refreshSeconds: 20,

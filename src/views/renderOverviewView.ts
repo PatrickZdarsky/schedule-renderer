@@ -9,6 +9,14 @@ interface RenderOverviewViewInput {
   windowMinutes: number;
 }
 
+function formatOverviewWindow(windowMinutes: number): string {
+  const hours = windowMinutes / 60;
+  const displayHours = Number.isInteger(hours) ? String(hours) : hours.toFixed(1).replace(/\.0$/, "");
+  const unit = hours === 1 ? "hour" : "hours";
+
+  return `By room for the next ${displayHours} ${unit}`;
+}
+
 export function renderOverviewView(input: RenderOverviewViewInput): string {
   const { rooms, timezone, nowMs, windowMinutes } = input;
 
@@ -64,7 +72,7 @@ export function renderOverviewView(input: RenderOverviewViewInput): string {
       : `<p class="empty-state">No rooms have activity in the current overview window.</p>`;
 
   return [
-    renderHero("Overview", null, `By room for the next ${windowMinutes} minutes`),
+    renderHero("Overview", null, formatOverviewWindow(windowMinutes)),
     renderCard(null, body, "card--overview-shell"),
   ].join("");
 }

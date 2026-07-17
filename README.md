@@ -58,6 +58,8 @@ GitHub Actions publishes multi-architecture container images to GHCR from `main`
 docker pull ghcr.io/patrickzdarsky/schedule-renderer:latest
 ```
 
+When running with `compose.yml`, the runtime config is bind-mounted from `./public/config.json` to `/usr/share/nginx/html/config.json`, so you can edit the host file without rebuilding the image.
+
 ## Regenerate the full convention mock
 
 If `2026-awoo-events_sessions.json` changes, rebuild the generated convention fixture with:
@@ -73,6 +75,7 @@ The runtime config lives in `public/config.json`.
 Key options:
 
 - `scheduleDataEndpoint`: API or mock-data URL
+- `roomWhitelist`: optional list of room IDs to expose; all views only see whitelisted rooms
 - `theme.pageBackgroundColor`: defaults to `transparent`
 - `theme.surfaceColor` and `theme.surfaceStrongColor`: card backgrounds
 - `layout.regionWidthVw`: roughly how much of the 16:9 screen width the renderer should occupy

@@ -75,4 +75,25 @@ describe("normalizeSchedule", () => {
     expect(normalized.occurrences.some((item) => item.occurrenceId.startsWith("art-jam__"))).toBe(true);
     expect(warnSpy).toHaveBeenCalled();
   });
+
+  it("filters rooms and occurrences through the runtime room whitelist", () => {
+    const schedule = createScheduleFixture();
+    schedule.sessions[0].timeSlots[0].roomIds = ["panel-1", "main-stage"];
+
+    const normalized = normalizeSchedule(
+      schedule,
+      createRuntimeConfig({
+        roomWhitelist: [" panel-1 ", "panel-1"],
+      }),
+    );
+
+    expect(Array.from(normalized.roomsById.keys())).toEqual(["panel-1"]);
+    expect(normalized.occurrences).toHaveLength(3);
+    expect(normalized.occurrencesByRoomId.has("main-stage")).toBe(false);
+    expect(normalized.occurrencesByRoomId.has("workshop")).toBe(false);
+
+    const openingChat = normalized.occurrences.find((item) => item.sessionId === "opening-chat");
+    expect(openingChat?.roomIds).toEqual(["panel-1"]);
+    expect(openingChat?.roomNames).toEqual(["Panel Room 1"]);
+  });
 });

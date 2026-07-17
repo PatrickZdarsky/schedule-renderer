@@ -27,6 +27,7 @@ export interface LayoutConfig {
 
 export interface RuntimeConfig {
   scheduleDataEndpoint: string;
+  roomWhitelist: string[] | null;
   timezone: string;
   preferredLocale: string;
   refreshSeconds: number;
@@ -50,6 +51,7 @@ interface ThemeDocumentOverrides {
 
 const defaultConfig: RuntimeConfig = {
   scheduleDataEndpoint: "/mock-data/happy-path.json",
+  roomWhitelist: null,
   timezone: "Europe/Vienna",
   preferredLocale: "en-US",
   refreshSeconds: 20,
@@ -89,10 +91,28 @@ const defaultConfig: RuntimeConfig = {
   },
 };
 
+function normalizeRoomWhitelist(value: unknown): string[] | null {
+  if (!Array.isArray(value)) {
+    return null;
+  }
+
+  const normalized = Array.from(
+    new Set(
+      value
+        .filter((item): item is string => typeof item === "string")
+        .map((item) => item.trim())
+        .filter((item) => item.length > 0),
+    ),
+  );
+
+  return normalized.length > 0 ? normalized : null;
+}
+
 function mergeConfig(input: Partial<RuntimeConfig> | undefined): RuntimeConfig {
   return {
     ...defaultConfig,
     ...input,
+    roomWhitelist: normalizeRoomWhitelist(input?.roomWhitelist),
     theme: {
       ...defaultConfig.theme,
       ...input?.theme,
