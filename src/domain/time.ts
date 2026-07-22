@@ -24,7 +24,17 @@ export function formatRelativeWindow(targetMs: number, nowMs: number): string {
   }
 
   if (deltaMinutes > 0) {
-    return deltaMinutes === 1 ? "Starts in 1 min" : `Starts in ${deltaMinutes} min`;
+    if (deltaMinutes < 60) {
+      return deltaMinutes === 1 ? "Starts in 1 min" : `Starts in ${deltaMinutes} min`;
+    }
+
+    const hours = Math.floor(deltaMinutes / 60);
+    const minutes = deltaMinutes % 60;
+    const hourLabel = hours === 1 ? "hour" : "hours";
+
+    return minutes === 0
+      ? `Starts in ${hours} ${hourLabel}`
+      : `Starts in ${hours} ${hourLabel} ${minutes} min`;
   }
 
   const elapsed = Math.abs(deltaMinutes);
