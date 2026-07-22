@@ -1,5 +1,5 @@
 import type { PresentedOccurrence } from "../domain/selectors";
-import { formatClockTime, formatEndsIn, formatRelativeWindow, formatTimeRange } from "../domain/time";
+import { formatClockTime, formatRelativeWindow, formatTimeRange } from "../domain/time";
 import { escapeHtml } from "../ui/escapeHtml";
 import { renderOccurrenceBadges } from "../ui/badges";
 
@@ -46,7 +46,7 @@ function buildNotes(item: PresentedOccurrence, nowMs: number): string[] {
   const notes: string[] = [];
 
   if (item.state.isCurrent) {
-    notes.push(formatEndsIn(item.occurrence.endMs, nowMs));
+    notes.push(formatRelativeWindow(item.occurrence.endMs, nowMs, "end"));
   } else if (item.state.justEnded) {
     notes.push("Just ended");
   } else {

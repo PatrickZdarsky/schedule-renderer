@@ -16,16 +16,27 @@ export function formatTimeRange(startMs: number, endMs: number, timezone: string
   return `${formatClockTime(startMs, timezone)} - ${formatClockTime(endMs, timezone)}`;
 }
 
-export function formatRelativeWindow(targetMs: number, nowMs: number): string {
-  const deltaMinutes = Math.round((targetMs - nowMs) / 60_000);
+type RelativeTimeKind = "start" | "end";
+
+export function formatRelativeWindow(
+  targetMs: number,
+  nowMs: number,
+  kind: RelativeTimeKind = "start",
+): string {
+  const deltaMinutes =
+    kind === "end"
+      ? Math.ceil((targetMs - nowMs) / 60_000)
+      : Math.round((targetMs - nowMs) / 60_000);
 
   if (deltaMinutes === 0) {
-    return "Now";
+    return kind === "end" ? "Just ended" : "Now";
   }
 
   if (deltaMinutes > 0) {
+    const action = kind === "end" ? "Ends" : "Starts";
+
     if (deltaMinutes < 60) {
-      return deltaMinutes === 1 ? "Starts in 1 min" : `Starts in ${deltaMinutes} min`;
+      return deltaMinutes === 1 ? `${action} in 1 min` : `${action} in ${deltaMinutes} min`;
     }
 
     const hours = Math.floor(deltaMinutes / 60);
@@ -33,22 +44,16 @@ export function formatRelativeWindow(targetMs: number, nowMs: number): string {
     const hourLabel = hours === 1 ? "hour" : "hours";
 
     return minutes === 0
-      ? `Starts in ${hours} ${hourLabel}`
-      : `Starts in ${hours} ${hourLabel} ${minutes} min`;
+      ? `${action} in ${hours} ${hourLabel}`
+      : `${action} in ${hours} ${hourLabel} ${minutes} min`;
+  }
+
+  if (kind === "end") {
+    return "Just ended";
   }
 
   const elapsed = Math.abs(deltaMinutes);
   return elapsed === 1 ? "Started 1 min ago" : `Started ${elapsed} min ago`;
-}
-
-export function formatEndsIn(endMs: number, nowMs: number): string {
-  const deltaMinutes = Math.max(0, Math.ceil((endMs - nowMs) / 60_000));
-
-  if (deltaMinutes <= 0) {
-    return "Just ended";
-  }
-
-  return deltaMinutes === 1 ? "Ends in 1 min" : `Ends in ${deltaMinutes} min`;
 }
 
 export function formatLastUpdated(timestampMs: number | null, timezone: string): string | null {

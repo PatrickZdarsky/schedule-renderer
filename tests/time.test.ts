@@ -14,4 +14,13 @@ describe("formatRelativeWindow", () => {
 
     expect(formatRelativeWindow(nowMs + 59 * 60_000, nowMs)).toBe("Starts in 59 min");
   });
+
+  it("uses the same formatting for event end times", () => {
+    const nowMs = Date.parse("2026-06-18T12:00:00Z");
+
+    expect(formatRelativeWindow(nowMs + 654 * 60_000, nowMs, "end")).toBe(
+      "Ends in 10 hours 54 min",
+    );
+    expect(formatRelativeWindow(nowMs - 1, nowMs, "end")).toBe("Just ended");
+  });
 });
