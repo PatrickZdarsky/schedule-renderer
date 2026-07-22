@@ -24,7 +24,19 @@ export async function fetchScheduleData(config: RuntimeConfig): Promise<unknown>
       throw new FetchScheduleError(`Schedule request failed with ${response.status}.`);
     }
 
-    return response.json();
+    const body = await response.text();
+
+    try {
+      return JSON.parse(body) as unknown;
+    } catch {
+      const contentType = response.headers.get("content-type") ?? "unknown content type";
+      const receivedHtml = /^\s*</.test(body);
+      const receivedType = receivedHtml ? "HTML" : contentType;
+
+      throw new FetchScheduleError(
+        `Schedule endpoint returned ${receivedType}, not valid JSON: ${config.scheduleDataEndpoint}`,
+      );
+    }
   } catch (error) {
     if (error instanceof DOMException && error.name === "AbortError") {
       throw new FetchScheduleError("Schedule request timed out.");
